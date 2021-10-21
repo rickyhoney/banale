@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>JS ES 3</title>
+    </head>
+    <body>
+        <h2>Calculator</h2>
+
+        <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <table id = "tabell" border="1">
+            <tr>
+                <th>N1</th>
+            </tr>
+        </table>
+        <script>
+            
+            $("body").append(
+                $("<p> primo numero </p> <input id = 'input1' type = 'number'>"),
+            
+                $("<br><br><button id = 'tabell'> calcola </button>").click(function(){
+
+                    $('#tabell').append('<tr><td>',$("#input1").val(),'</td></tr>');
+                
+                    })
+            );
+            
+        </script>
+        
+
+    </body>  
+</html>
